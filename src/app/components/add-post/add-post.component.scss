@@ -1,0 +1,32 @@
+.add-post {
+    max-width: 500px;
+    margin: 25px auto;
+    position: relative;
+}
+.h-loader{position: absolute;
+    z-index: 2;
+}
+.card-header {
+    border-bottom: 1px #494dbb solid;
+    margin-bottom: 25px;
+}
+mat-icon {    color: #494dbb;}
+.mat-card {
+    
+    border-radius: 5px;
+}
+.mat-card b {    
+    text-transform: uppercase;
+    color: #494dbb;}
+.large {
+        min-height: 100px;
+}
+.full-loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    bottom: 69px;
+    z-index: 1;
+    background-color: #ffffff96;
+}
