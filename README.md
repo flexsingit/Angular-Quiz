@@ -1,6 +1,11 @@
 # AngularQuiz
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
+## Demo URL
+    [Angular CURD APP]()
+## Dependency Package
+    [Angular Material](https://material.angular.io)<br>
+    [Angular Flex Layout](https://github.com/angular/flex-layout)
 
 ## Development server
 

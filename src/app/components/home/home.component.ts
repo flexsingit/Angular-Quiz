@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  delete (id, index) {
+  delete(id, index): void  {
     const dialogRef = this.deleteDialog.open(DeleteComponent, {
       data: { id : id }
     });

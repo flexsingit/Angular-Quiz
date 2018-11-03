@@ -18,15 +18,15 @@ export class DeleteComponent implements OnInit {
   }
 
   /** Show alert message */
-  openSnackBar(message) {
+  openSnackBar(message): void  {
     this.snackBar.open(message, '', { duration: 4000 });
   }
-  close() {
+  close(): void  {
     this.dialogRef.close();
   }
 
 
-  delete() {
+  delete(): void  {
     if (this.data && this.data.id) {
       this.isLoading = true;
       this.postServices.delete(this.data.id)

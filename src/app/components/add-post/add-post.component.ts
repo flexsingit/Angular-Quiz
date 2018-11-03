@@ -38,7 +38,7 @@ export class AddPostComponent implements OnInit {
     * Call APi to get data from server if edit route
     */
 
-  getPost() {
+  getPost(): void {
     this.isLoading = true;
     const id = this.route.snapshot.paramMap.get('id');
     this.postService.getSinglePost(id)
@@ -49,7 +49,7 @@ export class AddPostComponent implements OnInit {
     });
   }
   /** Dynamic route check edit or add */
-  checkRoute () {
+  checkRoute(): void  {
     if (this.router ) {
       const url = this.router.url.indexOf('edit-post');
       if (url >= 0) {
@@ -62,11 +62,11 @@ export class AddPostComponent implements OnInit {
     }
   }
 /** Show alert message */
-  openSnackBar(message) {
+  openSnackBar(message): void  {
     this.snackBar.open(message, '', { duration : 4000});
   }
 /** Add post */
-  addPost (data) {
+  addPost(data): void  {
     this.postService.add(data).subscribe(res => {
       this.isLoading = false;
       this.router.navigate(['']);
@@ -74,7 +74,7 @@ export class AddPostComponent implements OnInit {
     });
   }
 /** Update post  */
-  UpdatePost(data) {
+  UpdatePost(data): void  {
     this.postService.updatePost(data).subscribe(res => {
       this.isLoading = false;
       this.router.navigate(['']);
@@ -82,7 +82,7 @@ export class AddPostComponent implements OnInit {
     });
   }
   /** On form submit */
-  onSubmit () {
+  onSubmit(): void  {
       if ( this.form.valid) {
         this.isLoading = true;
         if (this.isUpdate) {

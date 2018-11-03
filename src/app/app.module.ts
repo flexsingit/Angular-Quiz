@@ -13,12 +13,11 @@ import { AppComponent } from './app.component';
 */
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DeleteComponent } from './components/home/delete/delete.component';
-import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, DeleteComponent, SnackBarComponent
+    AppComponent, DeleteComponent
   ],
   imports: [
     BrowserAnimationsModule,
